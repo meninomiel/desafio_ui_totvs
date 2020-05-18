@@ -1,0 +1,41 @@
+<div class="header-content">
+    <div class="header-content-logo">
+        <img src="../../assets/images/header/logo.svg" alt="City Holtels Logo">
+    </div>
+    <div class="header-content-form">
+        <form>
+            <div class="fields po-row">
+                <po-input class="field-name" name="location" p-help="Rua, Edifício ou Bairro (campo obrigatório)"
+                    p-label="Para onde vai Viajar?" p-placeholder="Porto Digital, Recife Antigo" p-required p-clean>
+                </po-input>
+                <po-datepicker name="checkin"  p-format="dd/mm/yyyy" p-help="DD/MM/AAAA" p-iso-format="Basic"
+                    p-label="Check-in" p-locale="pt" p-required >
+                </po-datepicker>
+                <po-datepicker name="checkout" p-format="dd/mm/yyyy" p-help="DD/MM/AAAA" p-iso-format="Basic"
+                    p-label="Check-out" p-locale="pt" p-required p-disabled>
+                </po-datepicker>
+                <po-combo class="field-room" name="room" p-help="Quartos e Pessoas" p-label="Hóspedes"
+                    p-placeholder="01 Quarto e 01 Pessoas" p-required>
+                </po-combo>
+                <po-button class="search-bt" p-label="Pesquisar" p-type="primary">
+                </po-button>
+            </div>
+            <div class="divider po-row">
+                <po-divider class="po-lg-10"></po-divider>
+                <a href="#" (click)="toggleBusiness()" class="business-link po-lg-2 po-font-text-bold">Viajante de Negócios <span class="po-icon link-business-icon po-icon-arrow-down"></span></a>
+            </div>
+            <div class="fields business">
+                <po-number name="fidelity" p-help="Número de 16 Digitos"
+                    p-label="Cartão Fidelidade" p-placeholder="0000-0000-0000-0000" p-required p-clean>
+                </po-number>
+                <po-input name="contract" p-help="Código Único da Empresa"
+                    p-label="Contrato / Empresa Parceira" p-placeholder="CPN00000-9" p-required p-clean>
+                </po-input>
+                <po-input name="cupom" p-help="Código Promocional Único" class="cupom"
+                    p-label="Cupom de Desconto" p-placeholder="CUPOM000" p-required p-clean>
+                </po-input>
+            </div>
+        </form>
+
+    </div>
+</div>

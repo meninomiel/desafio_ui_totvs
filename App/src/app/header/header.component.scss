@@ -1,0 +1,69 @@
+.header-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header-content-logo {
+    flex: 0 0 auto;
+    width: 200px; 
+    
+    img {
+        margin-top: -15px;
+    }
+}
+
+.header-content-form {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    
+    form {
+        width: 100%;
+    }
+
+    .fields {
+        display: flex;
+        flex:1;
+        flex-flow: row nowrap;
+
+        > * {
+            margin-left: 12px;
+            flex:1 0;
+        }
+
+        .field-name {
+            flex-basis: 225px;
+        }
+
+        .field-room {
+            flex-basis: 100px;
+        }
+
+        .search-bt {
+            align-self: flex-end;
+            flex: 0;
+            margin-bottom: 9px;
+        }
+    }
+
+    .divider {
+        margin: 10px 0;
+
+        .business-link {
+            text-align: right;
+            white-space: nowrap;
+        }
+    }
+
+    .business {
+        display: none;
+
+        .cupom {
+            margin-right: 100px;
+        }
+    }
+    .business-show {
+        display: flex;
+    }
+}
+

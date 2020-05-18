@@ -1,0 +1,88 @@
+<div class="hotel {{bestHotel}}">
+    <div class="hotel-wrapper">
+        <div class="hotel-pic">
+            <img src="{{hotelImage}}" alt="Imagem do Hotel" />
+        </div>
+        <div class="hotel-info">
+            <div class="hotel-info-detail">
+                <h1 class="hotel-info-detail-title">{{hotelName}}</h1>
+
+                <div class="hotel-info-detail-subtitle">
+                    <div class="subtitle-score">
+                        <img src="./assets/images/hotels/star.svg" alt="">
+                        <img src="./assets/images/hotels/star.svg" alt="">
+                        <img src="./assets/images/hotels/star.svg" alt="">
+                    </div>
+                    <div class="subtitle-features">
+                        <img src="./assets/images/hotels/wifi.svg" alt="">
+                        <img src="./assets/images/hotels/food.svg" alt="">
+                        <img src="./assets/images/hotels/pool.svg" alt="">
+                    </div>
+                </div>
+
+                <po-divider></po-divider>
+
+                <div class="hotel-info-detail-extra">
+                    <div class="extra-attractive">
+                        <p class="po-font-text-small">{{hotelDistance}} do destino</p>
+                        <p class="po-font-text-small"><span class="hotel-rating-badge hotel-rating--{{hotelRating}}">{{hotelRatingNumber}}</span> {{hotelEvaluation}}</p>
+                    </div>
+                    <div class="extra-freestuff">
+                        <p class="po-font-text-small">Wifi <span class="free-badge">Grátis</span></p>
+                        <p class="po-font-text-small">Café da Manhã <span class="free-badge">Grátis</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-info-price">
+                <div class="hotel-info-price-badge">
+                    <p class="po-font-text-small-bold price-bagde {{bestHotel}}">{{hotelSugestion}}</p>
+                    <img src="./assets/images/hotels/fav.svg" alt="Favorite Icon">
+                </div>
+                
+                <p class="po-font-text-small hotel-info-price-before">de {{priceBefore}} por</p>
+                <p class="po-font-text-large-bold hotel-info-price-current">
+                    {{currentPrice}} <br>
+                    a partir de {{nightNumber}} Noites
+                </p>
+
+                <p class="po-font-text-small hotel-info-price-moreinfo">
+                    <a href="#" (click)="toggleMoreInfo($event)">
+                        Mais Informações <span class="moreinfo-link po-icon po-icon-arrow-up"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hotel-more visibility--{{moreinfoVisibility}}">
+        <hr class="po-m-0">
+
+        <po-tabs
+            p-small='true'>
+            <po-tab p-label="Detalhes" p-active="true">
+                <div class="hotel-more-details">
+                    <p class="po-font-text">{{detailText}}</p>
+
+                    <div class="hotel-more-details-accomodations">
+                        <p class="po-font-text-small"><img src="./assets/images/hotels/wifi.svg"> Wifi no lobby (gratuito)</p>
+                        <p class="po-font-text-small"><img src="./assets/images/hotels/wifi.svg"> Wifi no quarto (gratuito)</p>
+                        <p class="po-font-text-small"><img src="./assets/images/hotels/food.svg"> Café da Manhã (gratuito)</p>
+                        <p class="po-font-text-small"><img src="./assets/images/hotels/food.svg"> Restaurante (24 horas)</p>
+                        <p class="po-font-text-small"><img src="./assets/images/hotels/pool.svg"> Piscina</p>
+
+                        <p class="po-font-text-small-bold accomodations-link">
+                            <a href="#">
+                                Visualizar todas as comodidades <span class="po-icon po-icon-arrow-down"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>                
+            </po-tab>
+            <po-tab p-label="Fotos"></po-tab>
+            <po-tab p-label="Avaliações"></po-tab>
+            <po-tab p-label="Promoções"></po-tab>
+            <po-tab p-label="Reservas"></po-tab>
+        </po-tabs>
+    </div>
+</div>

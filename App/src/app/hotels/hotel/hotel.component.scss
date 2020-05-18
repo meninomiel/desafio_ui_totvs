@@ -1,0 +1,189 @@
+.hotel {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+}
+
+.hotel.best {
+    border: 1px solid #208520;
+}
+
+.hotel-wrapper {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+
+    .hotel-pic {
+        height: 100%;
+        flex: 0 0 auto;
+        
+        img {
+            height: 140px;
+            width: 140px;
+        }
+    }
+
+    .hotel-info {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+
+        .hotel-info-detail {
+            flex: 1 0 auto;
+            padding: 10px 25px;
+            border-right: 1px solid #e1e1e1;
+            background-color: #fff;
+
+            .hotel-info-detail-title {
+                font-size: 18px;
+                font-weight: 600;
+                color: #505050;
+                margin-bottom: 10px;
+            }
+
+            .hotel-info-detail-subtitle {
+                display: flex;
+                flex-flow: row nowrap;
+
+                .subtitle-score {
+                    display: flex;
+                    flex: 1 0 auto;
+                }
+
+                .subtitle-features {
+                    display: flex;
+                    flex: 1 0 auto;
+                    justify-content: flex-end;
+
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .hotel-info-detail-extra {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+
+                p {
+                    margin-bottom: 5px;
+                }
+
+                .hotel-rating-badge, .free-badge {
+                    border-radius:10px;
+                    padding: 0 5px;
+                    margin-right: 2px;
+                    color: #fff;
+                }
+            
+                .hotel-rating--great, .free-badge {                    
+                    background-color: #208520;                    
+                }
+
+                .hotel-rating--good {
+                    background-color: #7CC830;
+                }
+            }
+        }
+
+        .hotel-info-price {
+            flex: 1 0 auto;
+            padding: 10px;
+
+            .hotel-info-price-badge {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;;
+
+                .price-bagde {
+                    display: flex;
+                    align-items: center;
+                    color: #208520;                    
+                }
+
+                .price-bagde::before {
+                    content: '';
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+                    background-image: url('../../../assets/images/hotels/check.svg');
+                }
+
+                .price-bagde.best {
+                    background-color: #208520;  
+                    color: #fff;
+                    border-radius:20px;
+                    padding: 2px 10px 2px 5px;                  
+                }
+
+                .price-bagde.best::before {
+                    background: #fff;
+                    mask: url('../../../assets/images/hotels/star.svg');
+                }
+            }
+
+            .hotel-info-price-before {
+                text-decoration: line-through;
+                color: #505050;
+            }
+
+            .hotel-info-price-current {
+                font-size: 20px;
+                color: #208520;
+                letter-spacing: -1px;
+                margin-bottom: 15px;
+            }
+
+            .hotel-info-price-moreinfo {
+                text-align: right;
+
+                .flip-icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+.hotel-more.visibility--false {
+    display: none;
+}
+
+.hotel-more {
+
+    .hotel-more-details {
+        padding: 10px 25px 25px;
+
+        .hotel-more-details-accomodations {
+            margin-top: 10px;
+            border: 1px solid #e1e1e1;
+            padding: 15px;
+            display: flex;
+            flex-flow: row wrap;
+
+            p {
+                vertical-align: middle;
+                margin-bottom: 10px;
+                flex: 0 0 33%;
+
+                img {
+                    width: 15px;    
+                    margin-right: 5px;
+                }
+            }
+
+            .accomodations-link {
+                flex: 1 0 100%;
+                align-self: flex-end;
+                margin-top: 20px;
+                margin-bottom: 0;
+                
+            }
+        }
+    }
+}

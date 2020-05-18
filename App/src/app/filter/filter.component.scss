@@ -1,0 +1,36 @@
+.filter-fields {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.field-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+
+    > * {
+        margin-right: 5px;
+    }
+}
+
+.price-slider {
+    appearance: none;
+    outline: none;
+    height: 5px;
+    border-radius: 50px;
+    background: #203885;
+}
+
+.price-slider::-webkit-slider-thumb {
+    appearance: none;
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #203885;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.extra {
+    margin: 0 0 0 auto;
+}

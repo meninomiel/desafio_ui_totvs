@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+}
+
+.header {
+    flex: 0 0 auto;
+    min-height: 100px;
+    padding: 15px 25px;
+    background-color: #fff;
+}
+
+.hotels {
+    flex: 1 0 auto;
+    background-color: #f5f5f5;
+}
+
+.hotels-content {
+    height: calc(100% - 65px);
+    padding: 0 25px;
+}
+
+.hotels-filter {
+    height: 65px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.hotels-content-list {
+    height: 100%;
+    max-height: 100%;
+}
+
+.hotels-content-map {
+    height: calc(100% - 25px);
+}

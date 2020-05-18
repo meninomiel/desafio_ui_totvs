@@ -1,0 +1,20 @@
+<div class="filter-fields">
+    <div class="field-wrapper">
+        <span class="po-font-text-bold">Ordenar por:</span>
+        <po-combo name="filter-how" p-placeholder="Sugestão" p-required></po-combo>
+        <po-combo name="filter-what" p-placeholder="Preço" p-required></po-combo>
+    </div>
+    <div class="field-wrapper">
+        <span class="po-font-text-bold">Preço:</span>
+        <input id="priceInput" name="price" type="range" min="100" max="1000" value="500" step="5" class="price-slider"
+            oninput="priceOutput.value = priceInput.value">
+        <span class="po-font-text-bold">
+            R$ <output name="priceOutputValue" id="priceOutput">500</output>,00
+        </span>
+    </div>
+    <div class="field-wrapper extra">
+        <po-combo name="filter-distance" p-placeholder="Sugestão" p-required></po-combo>
+        <po-combo name="filter-more" p-placeholder="Preço" p-required></po-combo>
+    </div>
+</div>
+
